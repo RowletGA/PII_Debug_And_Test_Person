@@ -6,9 +6,9 @@ namespace UnitTestAndDebug
     {
         static void Main(string[] args)
         {
-            Person john = new Person("John Doe", "1.234.567-8");
+            Person joaquin = new Person("Joaquin", "5.285.723-3");
             Person jane = new Person("Jane Doe", "8.765.432-1");
-            john.IntroduceYourself();
+            joaquin.IntroduceYourself();
             jane.IntroduceYourself();
         }
     }

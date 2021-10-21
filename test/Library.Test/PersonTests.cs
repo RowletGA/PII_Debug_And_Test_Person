@@ -3,19 +3,26 @@ using NUnit.Framework;
 using UnitTestAndDebug;
 
 namespace Tests
-{
+{   
+    [TestFixture]
     public class Tests
     {
-        [SetUp]
-        public void Setup()
+        [Test]
+        public void TestName() // indico que voy a realizar testeo de un nombre
         {
-            // Insertá tu código de inicialización aquí
+            Person joaquin = new Person("Joaquin", "5.285.723-3");
+            string expected = "Joaquin"; // indico que el valor esperado es el siguiente
+            Assert.AreEqual(expected, joaquin.Name);
         }
 
         [Test]
-        public void Test1() // Cambiá el nombre para indicar qué estás probando
+        public void TestID() // indico que voy a realizar testeo de una ID
         {
-            // Insertá tu código  de pruebaaquí
+            Person joaquin = new Person("Joaquin", "5.285.723-3");
+            string expected = "5.285.723-3"; // indico que el valor esperado es el siguiente
+            Assert.AreEqual(expected, joaquin.ID);
         }
+    
+
     }
 }
